@@ -2,6 +2,7 @@ package com.crzhacko.jdk8list;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,6 +22,9 @@ public class Main {
 
         List<String> myDaughter = Stream.of("She", "is", "my", "daughter").collect(Collectors.toList());
         System.out.println(myDaughter);
+
+        List<String> imSoHappyForHer = Collections.singletonList("I'm so happy.");
+        System.out.println(imSoHappyForHer);
     }
 
 }
